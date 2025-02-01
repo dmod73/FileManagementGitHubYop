@@ -57,7 +57,11 @@ namespace FileManagementGitHub.Services
             await using var stream = file.OpenReadStream(maxAllowedSize: 10 * 1024 * 1024);
             await using var fileStream = new FileStream(filePath, FileMode.Create);
             await stream.CopyToAsync(fileStream);
+
+            // Hacer commit y push automáticamente después de subir un archivo
+            CommitAndPushChanges($"🆕 Archivo {file.Name} agregado en {category}");
         }
+
 
         public List<string> GetFiles(string category)
         {
