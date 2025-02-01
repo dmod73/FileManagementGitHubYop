@@ -1,0 +1,45 @@
+﻿@page "/categorized-files"
+@inject FileManagementApp.Services.FileService FileService
+
+<div class="container">
+    <div class="title-container">
+        <h3>📂 Archivos Categorizados</h3>
+        <p>Lista de carpetas y archivos disponibles para descarga.</p>
+    </div>
+
+    <div class="categories-container">
+        @foreach (var category in Categories)
+        {
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">📁 @category</h5>
+                    <ul class="file-list">
+                        @if (FileService.GetFiles(category).Any())
+                        {
+                            @foreach (var file in FileService.GetFiles(category))
+                            {
+                                <li>
+                                    <span>📄 @file</span>
+                                    <a class="btn btn-primary btn-sm" href="@($"files/{category}/{file}")" download>⬇ Descargar</a>
+                                </li>
+                            }
+                        }
+                        else
+                        {
+                            <li class="text-muted">No hay archivos en esta categoría.</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<string> Categories = new();
+
+    protected override void OnInitialized()
+    {
+        Categories = FileService.GetCategories();
+    }
+}

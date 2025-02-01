@@ -1,0 +1,95 @@
+﻿@page "/file-manager"
+@inject FileManagementApp.Services.FileService FileService
+
+<div class="container">
+    <h3>📂 File Manager con Blazor Web App</h3>
+
+    <!-- Sección para Crear Nueva Carpeta -->
+    <div class="mb-3">
+        <input class="form-control" @bind="NewCategory" placeholder="Nombre de la nueva carpeta" />
+        <button class="btn btn-success btn-custom" @onclick="CreateCategory">📁 Crear Carpeta</button>
+    </div>
+
+    <!-- Sección para Seleccionar Carpeta y Subir Archivos -->
+    <div class="mb-3">
+        <select class="form-select" @bind="SelectedCategory">
+            <option value="">-- Selecciona una carpeta --</option>
+            @foreach (var category in Categories)
+            {
+                <option value="@category">@category</option>
+            }
+        </select>
+
+        <!-- Input para selección de archivo -->
+        <InputFile class="form-control mt-2" OnChange="HandleFileSelected" />
+
+        <button class="btn btn-primary btn-custom" @onclick="UploadFile" disabled="@(SelectedFile == null)">📤 Subir Archivo</button>
+    </div>
+
+    <!-- Listado de Carpetas y Archivos -->
+    <div>
+        <h4>📁 Carpetas Disponibles</h4>
+        <ul class="list-group">
+            @foreach (var category in Categories)
+            {
+                <li class="list-group-item">
+                    <strong>@category</strong>
+                    <ul class="file-list">
+                        @foreach (var file in FileService.GetFiles(category))
+                        {
+                            <li>
+                                <span>@file</span>
+                                <div>
+                                    <a class="btn btn-link btn-sm" href="@($"files/{category}/{file}")" download>⬇ Descargar</a>
+                                    <button class="btn btn-danger btn-sm" @onclick="() => DeleteFile(category, file)">❌ Eliminar</button>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+@code {
+    private string NewCategory = "";
+    private string SelectedCategory = "";
+    private IBrowserFile SelectedFile;  // Guardar archivo seleccionado
+    private List<string> Categories = new();
+
+    protected override void OnInitialized()
+    {
+        Categories = FileService.GetCategories();
+    }
+
+    private void CreateCategory()
+    {
+        if (!string.IsNullOrWhiteSpace(NewCategory))
+        {
+            FileService.CreateCategory(NewCategory);
+            Categories = FileService.GetCategories();
+            NewCategory = "";
+        }
+    }
+
+    private void HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        SelectedFile = e.File;
+    }
+
+    private async Task UploadFile()
+    {
+        if (!string.IsNullOrWhiteSpace(SelectedCategory) && SelectedFile != null)
+        {
+            using var stream = SelectedFile.OpenReadStream();
+            await FileService.UploadFileAsync(SelectedCategory, stream, SelectedFile.Name);
+        }
+    }
+
+    private void DeleteFile(string category, string fileName)
+    {
+        FileService.DeleteFile(category, fileName);
+        Categories = FileService.GetCategories();
+    }
+}

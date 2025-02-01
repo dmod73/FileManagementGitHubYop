@@ -1,0 +1,22 @@
+# Ignorar archivos de configuración de Visual Studio
+.vs/
+*.suo
+*.user
+*.cache
+*.pdb
+*.db
+*.idx
+*.log
+*.sqlite
+*.bak
+*.swp
+*.sdf
+*.ipch
+*.obj
+*.exe
+*.dll
+*.nupkg
+bin/
+obj/
+node_modules/
+wwwroot/
