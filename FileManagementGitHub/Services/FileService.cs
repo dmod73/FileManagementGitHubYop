@@ -1,14 +1,15 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
-using System.Linq;
+using System.Diagnostics;
+using System.IO;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components.Forms;
 
-namespace FileManagementApp.Services
+namespace FileManagementGitHub.Services
 {
     public class FileService
     {
-        private readonly string _basePath = "wwwroot/files";  // Carpeta donde se guardarán los archivos
+        private readonly string _basePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "UploadedFiles");
 
         public FileService()
         {
@@ -18,62 +19,112 @@ namespace FileManagementApp.Services
             }
         }
 
-        // 🔹 Obtener todas las categorías (carpetas)
         public List<string> GetCategories()
         {
-            return Directory.GetDirectories(_basePath).Select(Path.GetFileName).ToList();
+            if (!Directory.Exists(_basePath))
+            {
+                return new List<string>();
+            }
+
+            var directories = Directory.GetDirectories(_basePath);
+            var categories = new List<string>();
+            foreach (var dir in directories)
+            {
+                categories.Add(Path.GetFileName(dir));
+            }
+            return categories;
         }
 
-        // 🔹 Crear una nueva categoría
-        public void CreateCategory(string category)
+        public void CreateCategory(string categoryName)
         {
-            string categoryPath = Path.Combine(_basePath, category);
+            var categoryPath = Path.Combine(_basePath, categoryName);
             if (!Directory.Exists(categoryPath))
             {
                 Directory.CreateDirectory(categoryPath);
             }
         }
 
-        // 🔹 Subir un archivo a una categoría
-        public async Task UploadFileAsync(string category, Stream fileStream, string fileName)
+        public async Task UploadFileAsync(string category, IBrowserFile file)
         {
-            string categoryPath = Path.Combine(_basePath, category);
+            var categoryPath = Path.Combine(_basePath, category);
             if (!Directory.Exists(categoryPath))
             {
                 Directory.CreateDirectory(categoryPath);
             }
 
-            string filePath = Path.Combine(categoryPath, fileName);
-            using (var fileStreamOutput = new FileStream(filePath, FileMode.Create))
-            {
-                await fileStream.CopyToAsync(fileStreamOutput);
-            }
+            var filePath = Path.Combine(categoryPath, file.Name);
+
+            await using var stream = file.OpenReadStream(maxAllowedSize: 10 * 1024 * 1024);
+            await using var fileStream = new FileStream(filePath, FileMode.Create);
+            await stream.CopyToAsync(fileStream);
         }
 
-        // 🔹 Obtener archivos dentro de una categoría
         public List<string> GetFiles(string category)
         {
-            string categoryPath = Path.Combine(_basePath, category);
-            if (!Directory.Exists(categoryPath)) return new List<string>();
+            var categoryPath = Path.Combine(_basePath, category);
+            if (!Directory.Exists(categoryPath))
+            {
+                return new List<string>();
+            }
 
-            return Directory.GetFiles(categoryPath).Select(Path.GetFileName).ToList();
+            var files = Directory.GetFiles(categoryPath);
+            var fileNames = new List<string>();
+            foreach (var file in files)
+            {
+                fileNames.Add(Path.GetFileName(file));
+            }
+            return fileNames;
         }
 
-        // 🔹 Descargar archivo
-        public string GetFilePath(string category, string fileName)
-        {
-            return Path.Combine(_basePath, category, fileName);
-        }
-
-        // 🔹 Eliminar archivo
         public void DeleteFile(string category, string fileName)
         {
-            string filePath = GetFilePath(category, fileName);
+            var filePath = Path.Combine(_basePath, category, fileName);
             if (File.Exists(filePath))
             {
                 File.Delete(filePath);
             }
         }
+
+        // Hacer pública la función para que pueda ser llamada desde FileManager.razor
+        public void CommitAndPushChanges(string commitMessage)
+        {
+            try
+            {
+                RunGitCommand("git add .");
+                RunGitCommand($"git commit -m \"{commitMessage}\"");
+                RunGitCommand("git push origin main");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al hacer commit y push: {ex.Message}");
+            }
+        }
+
+        private void RunGitCommand(string command)
+        {
+            var processInfo = new ProcessStartInfo("cmd.exe", "/c " + command)
+            {
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            using (var process = Process.Start(processInfo))
+            {
+                process.WaitForExit();
+                string output = process.StandardOutput.ReadToEnd();
+                string error = process.StandardError.ReadToEnd();
+
+                if (!string.IsNullOrEmpty(error))
+                {
+                    Console.WriteLine($"Git Error: {error}");
+                }
+                else
+                {
+                    Console.WriteLine($"Git Output: {output}");
+                }
+            }
+        }
     }
 }
-

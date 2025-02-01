@@ -45,6 +45,9 @@ C:\Users\ortiz\source\repos\FileManagementGitHubYop\FileManagementGitHub\wwwroot
 C:\Users\ortiz\source\repos\FileManagementGitHubYop\FileManagementGitHub\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\app.css
 wwwroot\favicon.png
+wwwroot\files\Proof 2\cccc.pdf
+wwwroot\files\Proof 2\cotizacion (7).pdf
+wwwroot\files\Proof\cccc.pdf
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
@@ -89,3 +92,8 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\UploadedFiles\Proof1\cotizacion (7).pdf
+wwwroot\UploadedFiles\Proof2\cotizacion (7) (1).pdf
+wwwroot\UploadedFiles\Proof2\cotizacion (7).pdf
+wwwroot\UploadedFiles\Proof3\cotizacion (7) (1).pdf
+wwwroot\UploadedFiles\Proof3\young-man-wearing-chain-necklace (1).jpg

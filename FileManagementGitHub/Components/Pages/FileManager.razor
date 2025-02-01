@@ -1,18 +1,105 @@
-﻿@page "/counter"
+﻿@page "/file-manager"
+@inject FileManagementGitHub.Services.FileService FileService
 
-<PageTitle>Counter</PageTitle>
+<div class="container">
+    <h3>📂 File Manager con Blazor Web App</h3>
 
-<h1>Counter</h1>
+    <!-- Sección para Crear Nueva Carpeta -->
+    <div class="mb-3">
+        <input class="form-control" @bind="NewCategory" placeholder="Nombre de la nueva carpeta" />
+        <button class="btn btn-success btn-custom" @onclick="CreateCategory">📁 Crear Carpeta</button>
+    </div>
 
-<p role="status">Current count: @currentCount</p>
+    <!-- Sección para Seleccionar Carpeta y Subir Archivos -->
+    <div class="mb-3">
+        <select class="form-select" @bind="SelectedCategory">
+            <option value="">-- Selecciona una carpeta --</option>
+            @foreach (var category in Categories)
+            {
+                <option value="@category">@category</option>
+            }
+        </select>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+        <!-- Input para selección de archivo -->
+        <InputFile class="form-control mt-2" OnChange="HandleFileSelected" />
+
+        <button class="btn btn-primary btn-custom" @onclick="UploadFile" disabled="@(SelectedFile == null)">📤 Subir Archivo</button>
+    </div>
+
+    <!-- Botón para guardar cambios en GitHub -->
+    <div class="mb-3">
+        <button class="btn btn-dark btn-custom" @onclick="SaveToGitHub">💾 Guardar en GitHub</button>
+    </div>
+
+    <!-- Listado de Carpetas y Archivos -->
+    <div>
+        <h4>📁 Carpetas Disponibles</h4>
+        <ul class="list-group">
+            @foreach (var category in Categories)
+            {
+                <li class="list-group-item">
+                    <strong>@category</strong>
+                    <ul class="file-list">
+                        @foreach (var file in FileService.GetFiles(category))
+                        {
+                            <li>
+                                <span>@file</span>
+                                <div>
+                                    <a class="btn btn-link btn-sm" href="@($"/UploadedFiles/{category}/{file}")" download>⬇ Descargar</a>
+                                    <button class="btn btn-danger btn-sm" @onclick="() => DeleteFile(category, file)">❌ Eliminar</button>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
 
 @code {
-    private int currentCount = 0;
+    private string NewCategory = "";
+    private string SelectedCategory = "";
+    private IBrowserFile? SelectedFile;
+    private List<string> Categories = new();
 
-    private void IncrementCount()
+    protected override void OnInitialized()
     {
-        currentCount++;
+        Categories = FileService.GetCategories();
+    }
+
+    private void CreateCategory()
+    {
+        if (!string.IsNullOrWhiteSpace(NewCategory))
+        {
+            FileService.CreateCategory(NewCategory);
+            Categories = FileService.GetCategories();
+            NewCategory = "";
+        }
+    }
+
+    private void HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        SelectedFile = e.File;
+    }
+
+    private async Task UploadFile()
+    {
+        if (!string.IsNullOrWhiteSpace(SelectedCategory) && SelectedFile != null)
+        {
+            await FileService.UploadFileAsync(SelectedCategory, SelectedFile);
+            SelectedFile = null;
+        }
+    }
+
+    private void DeleteFile(string category, string fileName)
+    {
+        FileService.DeleteFile(category, fileName);
+        Categories = FileService.GetCategories();
+    }
+
+    private void SaveToGitHub()
+    {
+        FileService.CommitAndPushChanges("Manual GitHub Commit 🚀");
     }
 }

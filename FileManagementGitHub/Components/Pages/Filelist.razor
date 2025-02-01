@@ -1,26 +1,26 @@
 ﻿@page "/categorized-files"
-@inject FileManagementApp.Services.FileService FileService
+@inject FileManagementGitHub.Services.FileService FileService
 
 <div class="container">
-    <div class="title-container">
-        <h3>📂 Archivos Categorizadooos</h3>
-        <p>Lista de carpetas y archivos disponibles para descarga.</p>
-    </div>
+    <h3>📂 Archivos en GitHub (Solo los creados desde File Manager)</h3>
+    <p>Lista de carpetas y archivos creados desde el File Manager.</p>
 
     <div class="categories-container">
         @foreach (var category in Categories)
         {
+            var files = FileService.GetFiles(category);
+
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">📁 @category</h5>
                     <ul class="file-list">
-                        @if (FileService.GetFiles(category).Any())
+                        @if (files.Any())
                         {
-                            @foreach (var file in FileService.GetFiles(category))
+                            @foreach (var file in files)
                             {
                                 <li>
                                     <span>📄 @file</span>
-                                    <a class="btn btn-primary btn-sm" href="@($"files/{category}/{file}")" download>⬇ Descargar</a>
+                                    <a class="btn btn-primary btn-sm" href="@($"/UploadedFiles/{category}/{file}")" download>⬇ Descargar</a>
                                 </li>
                             }
                         }
