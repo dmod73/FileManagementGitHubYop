@@ -301,8 +301,8 @@
       ]
     },
     {
-      "Route": "UploadedFiles/Proof1/cotizacion (7).pdf",
-      "AssetFile": "UploadedFiles/Proof1/cotizacion (7).pdf",
+      "Route": "UploadedFiles/Proof1/cotizacion (7) (1).pdf",
+      "AssetFile": "UploadedFiles/Proof1/cotizacion (7) (1).pdf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -327,7 +327,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:19:08 GMT"
+          "Value": "Sat, 01 Feb 2025 15:34:59 GMT"
         }
       ],
       "EndpointProperties": [
@@ -338,8 +338,8 @@
       ]
     },
     {
-      "Route": "UploadedFiles/Proof1/cotizacion (7).vh0nvbt0x1.pdf",
-      "AssetFile": "UploadedFiles/Proof1/cotizacion (7).pdf",
+      "Route": "UploadedFiles/Proof1/cotizacion (7) (1).vh0nvbt0x1.pdf",
+      "AssetFile": "UploadedFiles/Proof1/cotizacion (7) (1).pdf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -364,7 +364,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:19:08 GMT"
+          "Value": "Sat, 01 Feb 2025 15:34:59 GMT"
         }
       ],
       "EndpointProperties": [
@@ -378,335 +378,7 @@
         },
         {
           "Name": "label",
-          "Value": "UploadedFiles/Proof1/cotizacion (7).pdf"
-        }
-      ]
-    },
-    {
-      "Route": "UploadedFiles/Proof2/cotizacion (7) (1).pdf",
-      "AssetFile": "UploadedFiles/Proof2/cotizacion (7) (1).pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "117634"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:19:50 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="
-        }
-      ]
-    },
-    {
-      "Route": "UploadedFiles/Proof2/cotizacion (7) (1).vh0nvbt0x1.pdf",
-      "AssetFile": "UploadedFiles/Proof2/cotizacion (7) (1).pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "117634"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:19:50 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vh0nvbt0x1"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="
-        },
-        {
-          "Name": "label",
-          "Value": "UploadedFiles/Proof2/cotizacion (7) (1).pdf"
-        }
-      ]
-    },
-    {
-      "Route": "UploadedFiles/Proof2/cotizacion (7).pdf",
-      "AssetFile": "UploadedFiles/Proof2/cotizacion (7).pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "117634"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:19:26 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="
-        }
-      ]
-    },
-    {
-      "Route": "UploadedFiles/Proof2/cotizacion (7).vh0nvbt0x1.pdf",
-      "AssetFile": "UploadedFiles/Proof2/cotizacion (7).pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "117634"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:19:26 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vh0nvbt0x1"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="
-        },
-        {
-          "Name": "label",
-          "Value": "UploadedFiles/Proof2/cotizacion (7).pdf"
-        }
-      ]
-    },
-    {
-      "Route": "UploadedFiles/Proof3/cotizacion (7) (1).pdf",
-      "AssetFile": "UploadedFiles/Proof3/cotizacion (7) (1).pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "117634"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:19:58 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="
-        }
-      ]
-    },
-    {
-      "Route": "UploadedFiles/Proof3/cotizacion (7) (1).vh0nvbt0x1.pdf",
-      "AssetFile": "UploadedFiles/Proof3/cotizacion (7) (1).pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "117634"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:19:58 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vh0nvbt0x1"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="
-        },
-        {
-          "Name": "label",
-          "Value": "UploadedFiles/Proof3/cotizacion (7) (1).pdf"
-        }
-      ]
-    },
-    {
-      "Route": "UploadedFiles/Proof3/young-man-wearing-chain-necklace (1).62xthivumo.jpg",
-      "AssetFile": "UploadedFiles/Proof3/young-man-wearing-chain-necklace (1).jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7656039"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nvVseHkFdkkz/b9/byGb4Urj1UL4nSF7tZXenG+bVz4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:20:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "62xthivumo"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nvVseHkFdkkz/b9/byGb4Urj1UL4nSF7tZXenG+bVz4="
-        },
-        {
-          "Name": "label",
-          "Value": "UploadedFiles/Proof3/young-man-wearing-chain-necklace (1).jpg"
-        }
-      ]
-    },
-    {
-      "Route": "UploadedFiles/Proof3/young-man-wearing-chain-necklace (1).jpg",
-      "AssetFile": "UploadedFiles/Proof3/young-man-wearing-chain-necklace (1).jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7656039"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nvVseHkFdkkz/b9/byGb4Urj1UL4nSF7tZXenG+bVz4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 15:20:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nvVseHkFdkkz/b9/byGb4Urj1UL4nSF7tZXenG+bVz4="
+          "Value": "UploadedFiles/Proof1/cotizacion (7) (1).pdf"
         }
       ]
     },

@@ -600,65 +600,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u9q1upor1n"},{"Name":"integrity","Value":"sha256-vqK8KwEVuWidx0Ddm5m5LyBriPDPl9TcjrKZQhkFSVA="},{"Name":"label","Value":"_content/FileManagementGitHub/lib/bootstrap/dist/js/bootstrap.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"149895"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vqK8KwEVuWidx0Ddm5m5LyBriPDPl9TcjrKZQhkFSVA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 14:41:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof1/cotizacion (7).pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof1\cotizacion (7).pdf'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof1/cotizacion (7) (1).pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof1\cotizacion (7) (1).pdf'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:19:08 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:34:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof1/cotizacion (7).vh0nvbt0x1.pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof1\cotizacion (7).pdf'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof1/cotizacion (7) (1).vh0nvbt0x1.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof1\cotizacion (7) (1).pdf'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vh0nvbt0x1"},{"Name":"integrity","Value":"sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="},{"Name":"label","Value":"_content/FileManagementGitHub/UploadedFiles/Proof1/cotizacion (7).pdf"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:19:08 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof2/cotizacion (7) (1).pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof2\cotizacion (7) (1).pdf'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:19:50 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof2/cotizacion (7) (1).vh0nvbt0x1.pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof2\cotizacion (7) (1).pdf'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vh0nvbt0x1"},{"Name":"integrity","Value":"sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="},{"Name":"label","Value":"_content/FileManagementGitHub/UploadedFiles/Proof2/cotizacion (7) (1).pdf"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:19:50 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof2/cotizacion (7).pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof2\cotizacion (7).pdf'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:19:26 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof2/cotizacion (7).vh0nvbt0x1.pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof2\cotizacion (7).pdf'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vh0nvbt0x1"},{"Name":"integrity","Value":"sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="},{"Name":"label","Value":"_content/FileManagementGitHub/UploadedFiles/Proof2/cotizacion (7).pdf"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:19:26 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof3/cotizacion (7) (1).pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof3\cotizacion (7) (1).pdf'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:19:58 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof3/cotizacion (7) (1).vh0nvbt0x1.pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof3\cotizacion (7) (1).pdf'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vh0nvbt0x1"},{"Name":"integrity","Value":"sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="},{"Name":"label","Value":"_content/FileManagementGitHub/UploadedFiles/Proof3/cotizacion (7) (1).pdf"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:19:58 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof3/young-man-wearing-chain-necklace (1).62xthivumo.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof3\young-man-wearing-chain-necklace (1).jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"62xthivumo"},{"Name":"integrity","Value":"sha256-nvVseHkFdkkz/b9/byGb4Urj1UL4nSF7tZXenG\u002BbVz4="},{"Name":"label","Value":"_content/FileManagementGitHub/UploadedFiles/Proof3/young-man-wearing-chain-necklace (1).jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7656039"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022nvVseHkFdkkz/b9/byGb4Urj1UL4nSF7tZXenG\u002BbVz4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:20:01 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FileManagementGitHub/UploadedFiles/Proof3/young-man-wearing-chain-necklace (1).jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UploadedFiles\Proof3\young-man-wearing-chain-necklace (1).jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nvVseHkFdkkz/b9/byGb4Urj1UL4nSF7tZXenG\u002BbVz4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7656039"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022nvVseHkFdkkz/b9/byGb4Urj1UL4nSF7tZXenG\u002BbVz4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:20:01 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vh0nvbt0x1"},{"Name":"integrity","Value":"sha256-Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8="},{"Name":"label","Value":"_content/FileManagementGitHub/UploadedFiles/Proof1/cotizacion (7) (1).pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"117634"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Q725Btr2XjVi//GfBlUeWVoY2Tqgb3AlTRb1euSNiu8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 15:34:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>
